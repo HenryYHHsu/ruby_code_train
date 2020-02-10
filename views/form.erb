@@ -1,0 +1,27 @@
+  <div class="content">
+    <h1>國際匯率情勢以美元計價</h1>
+
+      <% 13.downto(1) do |j| %>
+      <table class="data">
+        <thead class="thead">
+          <% for i in 0..8 do %>
+          <th scope="col"><%=@name_title[i]%></th>
+          <% end %> 
+        </thead> 
+        <tbody class="tbody">
+          <tr>
+              <th><%=@month[j-1]%></th>
+              <th><%=@ntd[j-1]%></th>
+              <th><%=@rmb[j-1]%></th>
+              <th><%=@jpy[j-1]%></th>
+              <th><%=@kor[j-1]%></th>
+              <th><%=@sgd[j-1]%></th>
+              <th><%=@eu[j-1]%></th>
+              <th><%=@uk[j-1]%></th>
+              <th><%=@aus[j-1]%></th>
+          </tr>
+        </tbody>
+        
+      </table>
+      <% end %>
+  </div>

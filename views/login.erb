@@ -1,0 +1,14 @@
+<% if session[:user9527] %>
+
+  已登入, hi <%= session[:user9527] %>
+  <a href="/logout">登出</a>
+
+<% else %>
+
+  <form action="/login" method="post">
+    帳號：<input type="text" name="username"><br />
+    密碼：<input type="password" name="password">
+    <button type="submit">登入</button>
+  </form>
+
+<% end %>
