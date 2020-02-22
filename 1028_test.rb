@@ -66,6 +66,7 @@ names = ["Henry","Andy","Joe","Chris"]
 # test=[1,2,3,4,5]
 # p test.map{|x| 2*x-1}
 
+
 #test2
 # test2=[1,3,4,1,7,nil,7]
 # test3=test2.compact # delete nil 
